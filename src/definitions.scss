@@ -1,0 +1,55 @@
+*{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+h1, h2, h3, p{
+    margin-block: 0;
+}
+
+@keyframes pulse-whats {
+    from { transform: scale(0.9); }
+    to { transform: scale(1.1); }
+}
+
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    70% { transform: scale(0.9, 1.1); }
+    75% { transform: scale(1.1, 0.9); }
+    80% { transform: scale(0.95, 1.05); }
+}
+
+@-webkit-keyframes slide-bl {
+    0% {
+      -webkit-transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateY(1rem) translateX(-1rem);
+              transform: translateY(1rem) translateX(-1rem);
+    }
+  }
+  @keyframes slide-bl {
+    0% {
+      -webkit-transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateY(1rem) translateX(-1rem);
+              transform: translateY(1rem) translateX(-1rem);
+    }
+  }
+  
