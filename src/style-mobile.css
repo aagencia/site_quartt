@@ -274,7 +274,7 @@
     border: #b6958b 1px solid;
     text-decoration: none;
   }
-  #Comodidade {
+  #Produtos {
     height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -291,14 +291,14 @@
             align-items: center;
     color: #483b31;
   }
-  #Comodidade h2 {
+  #Produtos h2 {
     font-size: 1.5rem;
     font-weight: normal;
     padding-bottom: 2rem;
     text-align: center;
     width: 80%;
   }
-  #Comodidade .logos {
+  #Produtos .logos {
     width: 80%;
     display: -ms-grid;
     display: grid;

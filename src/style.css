@@ -301,8 +301,139 @@ nav {
   height: auto;
 }
 
-#Comodidade {
-  height: 50vh;
+#Produtos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vw;
+}
+
+#Produtos .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.4fr 0.8fr 0.8fr;
+      grid-template-columns: 1.4fr 0.8fr 0.8fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 0px 0%;
+  grid-auto-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: ". . ." ". . .";
+  width: 80%;
+  height: 100%;
+}
+
+#Produtos h2 {
+  font-size: 3rem;
+}
+
+#Produtos p {
+  color: #fff;
+}
+
+#Produtos div {
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-content: center;
+}
+
+#Produtos div .title {
+  text-align: center;
+}
+
+#Produtos div img {
+  width: auto;
+  height: 80%;
+}
+
+#Produtos .content {
+  opacity: 0;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+#Produtos .content .text {
+  position: relative;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  text-align: left !important;
+  bottom: 1rem;
+  padding: 1rem;
+  width: 80%;
+  height: 70%;
+  vertical-align: top;
+}
+
+#Produtos .content .text .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+#Produtos .content:hover {
+  opacity: 0.9;
+}
+
+#Produtos .content:hover .content-text {
+  opacity: 1;
+  transform: translateY(3rem);
+  -webkit-transform: translateY(3rem);
+}
+
+#Produtos .Produtos h2 {
+  text-align: right;
+  padding-right: 2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  position: relative;
+  font-weight: bold;
+}
+
+#Produtos .Displays {
+  background-color: #740062;
+}
+
+#Produtos .Baterias {
+  background-color: #c68b20;
+}
+
+#Produtos .Peliculas {
+  background-color: #ce9122;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,131 +444,19 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #483b31;
 }
 
-#Comodidade h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  padding-bottom: 2rem;
-}
-
-#Comodidade .logos {
-  width: 80vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  list-style: none;
-  vertical-align: middle;
-}
-
-#Comodidade .logos img {
-  width: 8rem;
+#Produtos .Peliculas img {
+  width: 60%;
   height: auto;
 }
 
-#Botox {
-  height: 100vh;
-  background-image: url(/src/botox.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-#Botox .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  color: #fff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#Botox .content .logo-enjoy {
-  width: 20vw;
-  padding-bottom: 2rem;
-}
-
-#Botox .content .img-autoestima {
-  width: 30vw;
-}
-
-#Botox .content .img-autoestima-mobile {
-  display: none;
-}
-
-#Botox .content hr {
-  border: 0;
-  border-top: 1px solid #000;
-  width: 90%;
-  margin: 1rem 0 1rem 0;
-}
-
-#Botox .content p {
-  width: 30vw;
-  text-align: justify;
-}
-
-#Botox .content ul {
-  -webkit-column-count: 2;
-          column-count: 2;
-}
-
-#Botox .space {
-  width: 50%;
+#Produtos .Cabos {
+  background-color: #2d2d2d;
 }
 
 #Contato {
   height: 100vh;
-  position: relative;
-}
-
-#Contato iframe {
-  width: 100%;
-  height: 100%;
-}
-
-#Contato h2 {
-  color: #483b31;
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-#Contato .adress {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,33 +467,77 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30vw;
-  height: 50vh;
-  background-color: #d49523;
-  bottom: 0;
-  right: 10vw;
-  z-index: 3;
-  color: #fff;
+  background-color: #e9e8e8;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-#Contato .adress .content {
-  width: 80%;
+#Contato h2 {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
-#Contato .adress .content ul {
-  list-style: none;
-}
-
-#Contato .adress .content li {
-  padding: 0.5rem;
-}
-
-#Contato .adress .content a {
+#Contato a {
   text-decoration: none;
-  color: #fff;
+  color: #483b31;
+}
+
+#Contato .redes i {
+  color: #80006c;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+#Contato .redes .title {
+  color: #d49523;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+#Contato .adress i {
+  color: #d49523;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+#Contato .adress .title {
+  color: #80006c;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+#Contato .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+#Contato .content .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 footer {
@@ -488,7 +551,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1e1e1e;
+  background-color: #d49523;
 }
 
 footer img {
