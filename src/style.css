@@ -3,7 +3,22 @@ strong {
 }
 
 .whatsapp-icon {
-  display: none;
+  display: block;
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  font-size: 3rem;
+  opacity: 0.6;
+  color: #d49523;
+  z-index: 10;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.whatsapp-icon:hover {
+  color: #128C7E;
+  -webkit-transition: color 1s;
+  transition: color 1s;
 }
 
 #Navbar {
@@ -103,10 +118,7 @@ nav {
   padding: 2rem 0 2rem 0;
   font-size: 1rem;
   width: 80%;
-}
-
-#Banner .texto p br {
-  margin: 2rem;
+  line-height: 1rem;
 }
 
 #Banner .texto .lista {
@@ -302,126 +314,103 @@ nav {
 }
 
 #Produtos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 50vw;
+  /* GRID */
+  /* COLUMNS */
+  /* CLEARFIX */
+  /* GENERAL STYLES FOR BOX AND OVERLAY */
+  /* SLIDE UP */
 }
 
-#Produtos .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.4fr 0.8fr 0.8fr;
-      grid-template-columns: 1.4fr 0.8fr 0.8fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  gap: 0px 0%;
-  grid-auto-flow: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-      grid-template-areas: ". . ." ". . .";
-  width: 80%;
-  height: 100%;
-}
-
-#Produtos h2 {
-  font-size: 3rem;
-}
-
-#Produtos p {
-  color: #fff;
-}
-
-#Produtos div {
+#Produtos .grid {
+  max-width: 80vw;
   width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
+}
+
+#Produtos .four {
+  width: 30%;
+}
+
+#Produtos .large {
+  width: 40%;
+}
+
+#Produtos .col {
+  display: block;
+  float: left;
+  margin: 0;
+}
+
+#Produtos .col:first-of-type {
+  margin-left: 0;
+}
+
+#Produtos .cf:before,
+#Produtos .cf:after {
+  content: " ";
+  display: table;
+}
+
+#Produtos .cf:after {
+  clear: both;
+}
+
+#Produtos .cf {
+  *zoom: 1;
+}
+
+#Produtos .box {
+  display: block;
+  width: 100%;
+  height: 200px;
   overflow: hidden;
-  position: relative;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  justify-content: center;
-}
-
-#Produtos div .title {
   text-align: center;
+  position: relative;
 }
 
-#Produtos div img {
-  width: auto;
+#Produtos .original img {
   height: 80%;
 }
 
-#Produtos .content {
-  opacity: 0;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 0;
-  left: 0;
+#Produtos .original .title {
   color: #fff;
-  background-color: inherit;
+}
+
+#Produtos .overlay {
   width: 100%;
   height: 100%;
-  -webkit-transition: all 400ms ease-out;
-  transition: all 400ms ease-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
-#Produtos .content .text {
-  position: relative;
-  opacity: 1;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  text-align: left !important;
-  bottom: 1rem;
-  padding: 1rem;
-  width: 80%;
-  height: 70%;
-  vertical-align: top;
+#Produtos .Produtos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#Produtos .content .text .title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding-bottom: 1rem;
-}
-
-#Produtos .content:hover {
-  opacity: 0.9;
-}
-
-#Produtos .content:hover .content-text {
-  opacity: 1;
-  transform: translateY(3rem);
-  -webkit-transform: translateY(3rem);
-}
-
-#Produtos .Produtos h2 {
+#Produtos .Produtos h1 {
   text-align: right;
   padding-right: 2rem;
+  font-size: 3rem;
+  line-height: 3rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 0;
+  right: 0;
   position: relative;
   font-weight: bold;
+  overflow: hidden;
 }
 
 #Produtos .Displays {
@@ -446,17 +435,52 @@ nav {
           justify-content: center;
 }
 
-#Produtos .Peliculas img {
-  width: 60%;
-  height: auto;
+#Produtos .Pulseiras {
+  background-color: #fff;
+}
+
+#Produtos .Pulseiras .overlay > p {
+  color: #483b31;
 }
 
 #Produtos .Cabos {
   background-color: #2d2d2d;
 }
 
+#Produtos .slide-up .overlay {
+  background-color: inherit;
+  line-height: 1rem;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: transform 0.5s ease-out;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  padding-top: 2rem;
+}
+
+#Produtos .slide-up .overlay p {
+  overflow: hidden;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#Produtos .slide-up .overlay .content-title {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+#Produtos .slide-up .box:hover .overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 #Contato {
-  height: 100vh;
+  max-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,6 +499,7 @@ nav {
   background-color: #e9e8e8;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  overflow: hidden;
 }
 
 #Contato h2 {

@@ -138,20 +138,69 @@ $color-secondary: #483b31;
   }
     
   #Banner{
-    display: flex;
-    flex-direction: column;
-    padding-top: 15vh;
-    background-image: url(/src/bg-mobile.jpg);
-    background-position: left;
-    background-attachment: fixed;
+    display: flex; 
+    position: relative;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100vh;
 
-    h3{
-      text-align: center;
-    }
     img{
-        width: 100%;
-        margin-top: 1rem;
+        position: relative;
+        width: 20vw;
+        height: auto;
+        left: 5%;
+        top: 100%;
     }
+
+    .phone-bg{
+        width: 25vw;
+        height: auto;
+        transform: translateX(-5vw);
+    }
+    .texto{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 5;
+
+      h3{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+      p{
+          text-align: center;
+          padding: 2rem 0 2rem 0;
+          font-size: 0.8rem;
+          width: 80%;
+          line-height: 1rem;
+      }
+      .lista{
+          font-size: 0.7rem;
+      }
+    }
+    .redes{
+      display: none !important;
+    }
+
+    .faixa-left{
+      width: 60%;
+      left: 0;
+      top: 0;
+  
+      -webkit-animation: slide-bl 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse both;
+      animation: slide-bl 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse both;
+    }
+  }
+
+  .faixa-right{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 90vh;
+    overflow: hidden;
   }
 
   #Sobre{
@@ -167,26 +216,29 @@ $color-secondary: #483b31;
     }
 
     .texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 2rem;
-        p{
-            width: 70%;
-            color: $color-secondary;
-        }
-        h2{
-            color: $color-primary;
-            font-size: 1.2rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            padding: 0.8rem;
-            border: $color-primary 1px solid;
-        }
-        a{
-            text-decoration: none;
-        }
-    }
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      width: 80%;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      z-index: 3;
+
+      h2{
+          color: $color-secondary;
+          font-weight: bold;
+          text-align: left;
+          font-size: 2rem;
+          line-height: 2rem;
+          overflow: visible;
+      }
+
+      p{
+          color: $color-secondary;
+          font-size: 0.8rem;
+          padding-top: 2rem;
+      }
+  }
 
   }
 
